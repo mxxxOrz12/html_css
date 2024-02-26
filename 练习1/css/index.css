@@ -1,0 +1,24 @@
+.red-big-center {
+    color: red;
+    font-size: 2em;
+    text-align: center;
+}
+
+h1:hover {
+    color: red;
+}
+
+
+
+a:active {
+    color: red;
+}
+
+span::before {
+    content: "《";
+    color: red;
+}
+
+.abc .bcd {
+    color: red;
+}
