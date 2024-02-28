@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    color: #999;
+    background-color: #e3e4e5;
+    height: 30px;
+    line-height: 30px;
+}
+
+.header .topnav li {
+    float: left;
+}
