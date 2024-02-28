@@ -22,10 +22,62 @@ a {
 .header {
     color: #999;
     background-color: #e3e4e5;
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .header .topnav li {
     float: left;
+    margin: 0 15px;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+.header .topnav li:hover {
+    border: 2px solid #ccc;
+    line-height: 26px;
+    border-bottom: none;
+    background-color: #fff;
+
+}
+
+.header .topnav li .submenu {
+    width: 300px;
+    line-height: 1.5;
+    text-align: left;
+    display: none;
+}
+
+.header .topnav li:hover .submenu {
+    display: block;
+    position: absolute;
+    right: -2px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.header .topnav li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 5px;
+    background: #fff;
+    width: 100%;
+    left: 0;
+}
+
+.container {
+    margin-top: 50px;
+    border: 2px solid;
 }
