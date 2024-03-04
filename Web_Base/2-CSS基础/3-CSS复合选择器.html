@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*选择器的优先级为：id 选择器 > 类选择器 > 标签选择器*/
+        body {
+            background-color: azure;
+            color: rebeccapurple;
+        }
+        h1 {
+            text-align: center;
+        }
+        .book {
+          color: red;
+          font-size: 22px;
+        }
+        #mybook{
+          color: deeppink;
+        }
+        li{
+          color: black !important;
+        }
+    </style>
+</head>
+<body>
+<h1>好好学习天天向上</h1>
+图书分类：
+<ul>
+  <li class="book">经典</li>
+  <li id="mybook">文艺</li>
+  <li>科幻</li>
+</ul>
+<p>1小时学完CSS3</p>
+<div id="mydiv">
+    <p>1小时学完H5</p>
+    <div>
+        <p>学完早点找工作</p>
+    </div>
+</div>
+<a>百度链接</a>
+</body>
+</html>
