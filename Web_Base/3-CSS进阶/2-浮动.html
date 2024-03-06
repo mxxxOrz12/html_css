@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
   <style>
-    #header{
+    #header {
       height: 200px;
       width: 1000px;
       background-color: chartreuse;
     }
-    #sub-header1{
+
+    #sub-header1 {
       height: 100px;
       width: 300px;
       background-color: pink;
     }
-    #sub-header2{
+
+    #sub-header2 {
       height: 100px;
       width: 500px;
       background-color: deepskyblue;
     }
+
+    li {
+      float: left;
+      margin: 0 20px;
+    }
+
+    ul {
+      background-color: aqua;
+      padding: 10px;
+
+    }
+
+    ul::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .footer {
+      background: red;
+      height: 200px;
+    }
   </style>
 </head>
+
 <body>
-<div id="header">
-  <div id="sub-header1">
-    子盒子1
+  <div id="header">
+    <div id="sub-header1">
+      子盒子1
+    </div>
+    <div id="sub-header2">
+      子盒子2
+    </div>
   </div>
-  <div id="sub-header2">
-    子盒子2
+  <div>
+
+    <ul>
+      <li>导航1</li>
+      <li>导航2</li>
+      <li>导航3</li>
+      <li>导航4</li>
+      <li>导航5</li>
+    </ul>
+
+
+    <div class="footer">
+
+    </div>
   </div>
-</div>
-<div>
-  <ul>
-    <li>导航1</li>
-    <li>导航2</li>
-    <li>导航3</li>
-    <li>导航4</li>
-    <li>导航5</li>
-  </ul>
-</div>
 </body>
+
 </html>

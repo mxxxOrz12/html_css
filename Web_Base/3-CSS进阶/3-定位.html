@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Title</title>
   <style>
-    *{
+    * {
       margin: 0px;
     }
-    #header{
-    }
-    #sub-header1{
+
+    #header {}
+
+    #sub-header1 {
       height: 100px;
       width: 300px;
       background-color: pink;
     }
-    #sub-header2{
+
+    #sub-header2 {
       height: 100px;
       width: 400px;
       background-color: deepskyblue;
@@ -25,24 +28,54 @@
       /*固定定位*/
 
     }
-    #sub-header3{
+
+    #sub-header3 {
       height: 100px;
       width: 500px;
       background-color: #ddc0e8;
+      position: relative;
+      top: 50px;
+      left: 50px;
+    }
+
+    #sub-header3 .p1 {
+      color: red;
+      background-color: rgb(36, 41, 109);
+      width: 200px;
+      position: absolute;
+
+    }
+
+    #sub-header3 .p2 {
+      color: red;
+      background-color: rgb(51, 109, 36);
+      width: 200px;
+      position: absolute;
+      top: 40px;
+
     }
   </style>
+
 </head>
+
 <body style="height: 2000px">
-<div id="header">
-  <div id="sub-header1">
-    子盒子1
+  <div id="header">
+    <div id="sub-header1">
+      子盒子1
+    </div>
+    <div id="sub-header2">
+      子盒子2
+    </div>
+    <div id="sub-header3">
+      <div>
+        <p class="p1">1111</p>
+      </div>
+      <div>
+        <p class="p2">2111</p>
+      </div>
+
+    </div>
   </div>
-  <div id="sub-header2">
-    子盒子2
-  </div>
-  <div id="sub-header3">
-    子盒子3
-  </div>
-</div>
 </body>
+
 </html>
