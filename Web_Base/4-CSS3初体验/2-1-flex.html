@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #header{
+        #header {
             height: 200px;
             width: 1000px;
             background-color: chartreuse;
+            display: flex;
+            flex-wrap: wrap;
         }
-        #sub-header1{
+
+        #sub-header1 {
             height: 100px;
-            width: 200px;
+            flex: 3;
             background-color: pink;
         }
-        #sub-header2{
+
+        #sub-header2 {
             height: 100px;
-            width:800px;
+            flex: 1;
             background-color: deepskyblue;
         }
     </style>
 </head>
+
 <body>
-<div id="header">
-    <div id="sub-header1">
-        头部1
+    <div id="header">
+        <div id="sub-header1">
+            头部1
+        </div>
+        <div id="sub-header2">
+            头部2
+        </div>
     </div>
-    <div id="sub-header2">
-        头部2
-    </div>
-</div>
 </body>
+
 </html>

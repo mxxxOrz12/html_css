@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,13 +10,18 @@
             height: 200px;
             border: 1px solid #c3c3c3;
             display: flex;
+            flex-direction: column;
         }
+
         .content2 {
             width: 200px;
             height: 200px;
             border: 1px solid #c3c3c3;
             display: flex;
+            flex-wrap: wrap;
+
         }
+
         .box {
             width: 50px;
             height: 50px;
@@ -23,18 +29,21 @@
         }
     </style>
 </head>
+
 <body>
-<div class="content1">
-    <div class="box" style="background-color:#FFE5B9;">A</div>
-    <div class="box" style="background-color:#EFF8FF;">B</div>
-    <div class="box" style="background-color:#C9CBFF;">C</div>
-</div>
-<div class="content2">
-    <div class="box" style="background-color:#FFE5B9;">A</div>
-    <div class="box" style="background-color:#EFF8FF;">B</div>
-    <div class="box" style="background-color:#C9CBFF;">C</div>
-    <div class="box" style="background-color:#C9CBFF;">D</div>
-    <div class="box" style="background-color:#C9CBFF;">E</div>
-</div>
+    <div class="content1">
+        <div class="box" style="background-color:#FFE5B9;">A</div>
+        <div class="box" style="background-color:#EFF8FF;">B</div>
+        <div class="box" style="background-color:#C9CBFF;">C</div>
+    </div>
+    <div class="content2">
+        <div class="box" style="background-color:#FFE5B9;">A</div>
+        <div class="box" style="background-color:#EFF8FF;">B</div>
+        <div class="box" style="background-color:#C9CBFF;">C</div>
+        <div class="box" style="background-color:#C9CBFF;">D</div>
+        <div class="box" style="background-color:#C9CBFF;">E</div>
+
+    </div>
 </body>
+
 </html>
